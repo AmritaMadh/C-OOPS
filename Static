@@ -1,0 +1,23 @@
+- Static is a concept where we create one copy and share it accross all the instances of the class.
+- Static : 
+        class
+        constructor
+        fields
+        property
+        method
+   
+- Cannot be Static : 
+        Structure
+        interface
+        destructor
+        Abstract
+- Abstract classes contain abstract methods that should be implemented in derived classes. 
+  static keyword in class definition means that all methods in the class are static as well. 
+  But static methods cannot be inherited or overridden, and that is why they can't be abstract.
+ 
+ - Static class
+   only contain static members.
+   cannot be instantiated.
+   are sealed.
+   can have only one static constructor and that too parameterless
+   static members are accessed using class name
