@@ -1,0 +1,20 @@
+Why we need Abstract class or Interface?
+  - for code maintenability
+  - to provide an atchitecture for all derived classes
+  - its less error prone
+  - to prevent creation of object we make a class abstract
+
+Abstract class have constructor and why?
+  - yes, used to initialize the fields.
+  - when instatnce of derived class is created, parent abstract class constructor is automatically called first.
+    there's an implicit call to the base constructor prior to the derived constructor execution.
+  - constructor should be protected.
+  
+Interface and Abstract Diffrence :
+
+  - Interface can have implementation for any of its member where as abstract class can have or cannot
+  - Interface is public where as abstract can have any access modifier(default private)
+  - Interface cannot have fields where as abstract classes can have
+  - Interface can inherite from interface only where as abstract class can inherit from other abstract as well as interface
+  - Interface cannot have constructor where as abstract can have
+
