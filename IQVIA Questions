@@ -1,0 +1,26 @@
+SQL
+Question 1 : 
+  table A [red, red,bule blue]
+  table B [blue, red, blue, blue]
+  Write a query to keep all the red color in table A and blue color in table B.
+
+Question 2 : having clause
+
+Angular
+Q1 : Observable and promise. what other thing we can use inplace of Obsevable.
+Q2 : How we can interpolate an array in html tamplate.
+Q3 : whats diffrence between Angular JS and Angular 2, 4,5.
+Q4 : Life Cycle of Angular.
+Q5 : Diffrence between Var and let.
+
+JS 
+Q1 : == and ===, null==undefined and null === undefined
+
+web Api
+Q1 : HTTP methods
+
+C#
+Opps example
+Var and dynamic
+
+  
