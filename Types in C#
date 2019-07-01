@@ -1,7 +1,13 @@
 1. There is no separate heap allocation or garbage collection overhead for value-type variables.
 
-2. When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as garbage collection. 
+2. When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location 
+   of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic 
+   memory management functionality of the CLR, which is known as garbage collection. 
 
-3. Constant : Use caution when you refer to constant values defined in other code such as DLLs. If a new version of the DLL defines a new value for the constant, your program will still hold the old literal value until it is recompiled against the new version.
+3. Constant : when the compiler encounters a constant identifier in C# source code (for example, months), it substitutes the literal value
+              directly into the intermediate language (IL) code that it produces. Because there is no variable address associated with a 
+              constant at run time, const fields cannot be passed by reference and cannot appear as an l-value in an expression.
+            : Use caution when you refer to constant values defined in other code such as DLLs. If a new version of the DLL defines a new 
+             value for the constant, your program will still hold the old literal value until it is recompiled against the new version.
 
 
