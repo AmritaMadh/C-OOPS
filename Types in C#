@@ -19,4 +19,5 @@
 5. Private Constructor: 
                        Private constructors are used to prevent creating instances of a class when there are no instance fields or methods, 
                        such as the Math class, or when a method is called to obtain an instance of a class. 
+6. Events: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/index                    
 
