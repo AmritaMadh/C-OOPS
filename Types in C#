@@ -16,5 +16,7 @@
                         of the field. A readonly field can be assigned multiple times in the field declaration and in any constructor. 
                         Therefore, readonly fields can have different values depending on the constructor used. Also, while a const field 
                         is a compile-time constant, the readonly field can be used for runtime constants .
-
+5. Private Constructor: 
+                       Private constructors are used to prevent creating instances of a class when there are no instance fields or methods, 
+                       such as the Math class, or when a method is called to obtain an instance of a class. 
 
