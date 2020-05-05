@@ -1,0 +1,5 @@
+Interface is a template which has only medthod declaration.
+It is used as an architecture for the derived classes.
+It cannot have constructor as it's not a class.
+Interface can inherit only form other interface.
+It is use for multiple inheritance.
