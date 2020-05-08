@@ -42,3 +42,6 @@ Dirrences:
 
    If you use a readonly in dll A and dll B references that readonly, that readonly will always be looked up at runtime. 
    This means if you redeploy dll A with a new value for that readonly, dll B will use that new value.
+
+
+https://stackoverflow.com/questions/277010/what-are-the-benefits-to-marking-a-field-as-readonly-in-c
