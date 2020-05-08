@@ -2,8 +2,43 @@ CONSTANT:
 - Constants are fields whose values are set at compile time and can never be changed. 
 - It can be accessed using class name.
 - classes, structs, and arrays, cannot be const.
-- Use the readonly modifier to create a class, struct, or array that is initialized one time at runtime (for example in a constructor) and thereafter cannot be changed.
+- Use the readonly modifier to create a class, struct, or array that is initialized one time at runtime (for example in a constructor) and 
+  thereafter cannot be changed.
 - C# does not support const methods, properties, or events.
-- when the compiler encounters a constant identifier in C# source code (for example, months), it substitutes the literal value directly into the intermediate language (IL) code that it produces. Because there is no variable address associated with a constant at run time, const fields cannot be passed by reference and cannot appear as an l-value in an expression.
-- Use caution when you refer to constant values defined in other code such as DLLs. If a new version of the DLL defines a new value for the constant, your program will still hold the old literal value until it is recompiled against the new version.
+- when the compiler encounters a constant identifier in C# source code (for example, months), it substitutes the literal value directly 
+  into the intermediate language (IL) code that it produces. Because there is no variable address associated with a constant at run time, 
+  const fields cannot be passed by reference and cannot appear as an l-value in an expression.
+- Use caution when you refer to constant values defined in other code such as DLLs. If a new version of the DLL defines a new value for the
+  constant, your program will still hold the old literal value until it is recompiled against the new version.
 - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constants
+
+READONLY:
+- Readonly indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. 
+- A readonly field can be assigned and reassigned multiple times within the field declaration and constructor.
+- It can be accessed using class object.
+- a readonly can be used as a RUNTIME constant.
+
+STATIC READONLY
+- A Static Readonly type variable's value can be assigned at runtime or assigned at compile time and changed at runtime. 
+  But this variable's value can only be changed in the static constructor. And cannot be changed further. It can change only once at 
+  runtime.
+- accessed using class name.
+
+Dirrences:
+1. a CONSTANT field can only be initialized at declaration time
+   a READONLY field can be initialized either at declaration time or in a constructor
+   a STATIC READONLY can be initialize at compile time or runtime, but can be changed at runtime
+   
+2. a CONSTANT is a complile time constant
+   a READONLY is a runtime constant
+   a STATIC READONLY can be changed at runtime only once
+   
+3. a CONSTANT can be accessed using class name
+   a READONLY can be accessed sing object
+   a STATIC READONLY can be accessed using class name
+   
+4. If you use a const in dll A and dll B references that const, the value of that const will be compiled into dll B. 
+   If you redeploy dll A with a new value for that const, dll B will still be using the original value.
+
+   If you use a readonly in dll A and dll B references that readonly, that readonly will always be looked up at runtime. 
+   This means if you redeploy dll A with a new value for that readonly, dll B will use that new value.
