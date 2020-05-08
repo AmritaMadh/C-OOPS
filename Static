@@ -38,6 +38,8 @@
    * A static class can be used as a convenient container for set of methods that can just operate only on input parameters and cannot have any internal instance fields.
      e.g. - System.Math class
            Math.Round()
+           
+ - this keyword cannot be used with a static member because this implies an object. A static member cannot reference non-static members in its implementation (it will generate a compiler error).
    
    
  - References
