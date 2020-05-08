@@ -20,7 +20,7 @@
    Only contain static members.
    Cannot be instantiated.
    Are sealed (can’t be inherited).
-   Can have only one static constructor and that too parameterless with no access modifier
+   Can have only one static constructor and that too parameterless with no access modifier(default public)
    Other than static constructor, other static members can have access modifier
    Static members are accessed using class name
    
