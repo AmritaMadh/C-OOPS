@@ -1,29 +1,44 @@
-- Static is a concept where we create one copy and share it accross all the instances of the class.
-- Static : 
-        class
-        constructor
-        fields
-        property
-        method
+- Static is a concept where we create one copy and share it across all the instances of the class.
+- Static: 
+        Class
+        Constructor
+        Fields
+        Property
+        Method
    
-- Cannot be Static : 
+- Cannot be Static: 
         Structure
-        interface
-        destructor
+        Interface
+        Destructor
         Abstract
+        
 - Abstract classes contain abstract methods that should be implemented in derived classes. 
-  static keyword in class definition means that all methods in the class are static as well. 
+  Static keyword in class definition means that all methods in the class are static as well. 
   But static methods cannot be inherited or overridden, and that is why they can't be abstract.
- 
+  
  - Static class
-   only contain static members.
-   cannot be instantiated.
-   are sealed.
-   can have only one static constructor and that too parameterless
-   static members are accessed using class name
+   Only contain static members.
+   Cannot be instantiated.
+   Are sealed (can’t be inherited).
+   Can have only one static constructor and that too parameterless with no access modifier
+   Other than static constructor, other static members can have access modifier
+   Static members are accessed using class name
    
+ - static members in Non Static class cannot be overridden.  
+ 
  - Static field
-   static field is shared among all the object of a class, So if an object changes this value, then all the object of this class will get changedvalue
+   Static field is shared among all the object of a class, So if an object changes this value, then all the object of this class will get changed value
+   A static constructor is only called once and a static class remains in memory for lifetime of the application domain in which program resides.
+   
+ - Why static class cannot have destructor
+   Destructors are intended for object memory clean up, static type doesn't have object representation and so we don’t need static destructors.
+   
+ - Why do we use static classes?
+   * When we don't want to use instantiate a class
+   * A static class can be used as a convenient container for set of methods that can just operate only on input parameters and cannot have any internal instance fields.
+     e.g. - System.Math class
+           Math.Round()
+   
    
  - References
    http://dotnetinterviewcracker.blogspot.com/2013/08/static-keyword-in-c.html?m=1
