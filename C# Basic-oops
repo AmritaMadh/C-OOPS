@@ -6,7 +6,7 @@ object : An object is an entity which has behaviour and state.
          Everything is a class and , a perticular instatnce of everything is an object.
 
 Abstract :
-  - represent importent features without including background details of implementation. Process of hiding implementation and showing only functionality.
+  - represent important features without including background details of implementation. Process of hiding implementation and showing only functionality.
       eg. sending message
           user usess thr process og sending message buit have no idea how it works.
   - can achieve abstarct using : abstract class and interface.
