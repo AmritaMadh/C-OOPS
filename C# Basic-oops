@@ -8,7 +8,7 @@ object : An object is an entity which has behaviour and state.
 Abstract :
   - represent important features without including background details of implementation. Process of hiding implementation and showing only functionality.
       eg. sending message
-          user usess thr process og sending message buit have no idea how it works.
+          user uses the process of sending message but have no idea how it works.
   - can achieve abstarct using : abstract class and interface.
   
 Encapsulation :
