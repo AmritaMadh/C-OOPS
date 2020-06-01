@@ -1,5 +1,7 @@
 # C-OOPS
 Class : its a design /buleprint or architecture.
+        the terms class - describe the type of objects,
+        the object - describes the instances of classes.
 object : An object is an entity which has behaviour and state.
          object is the instatnce of that class.
          eg: Employee class and "employeeOne" is a perticular instatnce of that class.
@@ -24,15 +26,15 @@ Encapsulation :
    Encapsulation solves the problem in implementation.
    
  Inheritance :
-  - process by which object of one class acquires thr properties of other class.
+  - process by which object of one class acquires the properties of other class.
   - Importance
       Improves code resuability
       Implement Polymorphism
       
  Polymorphism :
   - One interface and many implementation
-  - Its a charactristic of assigning diffrent meaning or uses to somthing in diffrent context.
-  - achieved uding Inheritance, Overloading, Overriding.
+  - Its a charactristic of assigning different meaning or uses to something in diffrent context.
+  - achieved using Inheritance, Overloading, Overriding.
   
   Method overriding : process of redefining behaviour of perticular type. 
       
