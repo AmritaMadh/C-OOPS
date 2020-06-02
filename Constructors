@@ -15,7 +15,19 @@ A constructor is a method which is used to initialize an object of a class/struc
                             - If you don't provide a static constructor to initialize static fields, all static fields are initialized to their default value
                             - If a static constructor throws an exception, the runtime will not invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain in which your program is running. Most commonly, a TypeInitializationException exception
                               is thrown when a static constructor is unable to instantiate a type or for an unhandled exception occurring within a static constructor.
-                              A field declared as static readonly may only be assigned as part of its declaration or in a static constructor.
-
+                            - A field declared as static readonly may only be assigned as part of its declaration or in a static constructor.
+                            example: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors
+            
+    - copy constructor:     is a special constructor for creating a new object as a copy of existing object.
+                            example: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-write-a-copy-constructor
 
     C# doesn't provide a copy constructor for objects, but you can write one yourself.
+    
+    - finalizer:            also destructor are used to perform any necessary final clean-up when an instance is being collected by garbage collector.
+                            Remarks:
+                            - Finalizer cannot be defined in structs. They are only used with classes.
+                            - cannot be inheritaed or overloaded
+                            - are parameterless and dont have acess modifier
+                            - a class can have only one finializer
+                            - finalizers are not called, they are invoked automatically
+                            example: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors
