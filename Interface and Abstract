@@ -8,6 +8,10 @@ Interface:
  - We can only define some members like events, properties, indexers and methods in an interface.
  - can inherit only form another interface.
  
+ - https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/interfaces
+ 
+ 
+ 
  Abstraction:
  - Some members are abstract some are fully implemented.
  - We can define any member in Abstract class.
