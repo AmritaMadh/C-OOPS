@@ -13,6 +13,7 @@ Interface:
  
  
  Abstraction:
+ - An abstract class cannot be instantiated. The purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share. 
  - Some members are abstract some are fully implemented.
  - We can define any member in Abstract class.
  - Abstract class does not support multiple inheritance.
