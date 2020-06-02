@@ -1,5 +1,21 @@
-Interface is a template which has only medthod declaration.
-It is used as an architecture for the derived classes.
-It cannot have constructor as it's not a class.
-Interface can inherit only form other interface.
-It is use for multiple inheritance.
+Interface:
+ - Interface is a template which has only medthod declaration.
+ - All members are abstract.
+ - It is used as an architecture for the derived classes.
+ - It cannot have constructor as interface doesnt have instance variables.
+ - Interface can inherit only form other interface.
+ - Interfaces supports multiple inheritance.
+ - We can only define some members like events, properties, indexers and methods in an interface.
+ - can inherit only form another interface.
+ 
+ Abstraction:
+ - Some members are abstract some are fully implemented.
+ - We can define any member in Abstract class.
+ - Abstract class does not support multiple inheritance.
+ - Abstract class can inherit from another abstract/interface.
+
+1. If we cannot create object of an abstract class why we have constructor?
+   - to initialize the field,
+   - though we cannot create an instance of an abstract class, we can cretae instance of the classes that are derived from the abstract class.
+     so instance of derived classs is created, the parent abstract class constructor is automatically called to initialize the abstract fields.
+     
