@@ -1,0 +1,33 @@
+IEnumerable:
+System.Collections Namespace
+doesnt support Lazy Loading
+While querying data from database, IEnumerable executes select query on server side, load data in-memory on client side and then filter data. Hence does more work and becomes slow.
+LINQ to Object and LINQ to XML queries
+Doesn’t support custome Query
+Extension methods supported in IEnumerable takes functional objects.
+When querying data from in-memory collections like List, Array, etc.
+Best use for In-memory traversal
+
+IQueryable:
+System.Linq Namespace
+Derives from IEnumerable
+While querying data from database, IQueryable executes select query on server side with all filters. Hence does less work and becomes fast.
+LINQ to SQL queries
+Supports Custom Query using CreateQuery and Execute methods
+Extension methods supported in IEnumerable takes expression objects, i.e., expression tree.
+When querying data from out-memory (like remote database, service) collections.
+Best Uses Paging
+
+Difference between Func<> and Expression<Func<>>
+
+There are many differences. Developers don't know whether they should use a Func<> or an Expression<Func<>> with the Entity Framework and LINQ. If you see the IQueryable interface, many methods expect an Expression as parameters. Then what is the real use? Let us see in this article.
+If you see the definitions, conceptually they are completely different. Func<T> denotes a delegate that is pretty much a pointer to a method and Expression<Func<T>> denotes a tree data structure for a lambda expression. I think it explains well about when to use it. If you want to
+treat lambda expressions as expression trees and look inside them and don't want to execute them, you can use it as Expression Trees. For example, LINQ to SQL gets the expression and converts it to the equivalent SQL statement and submits it to the server rather than executing the lambda. 
+Expression trees can also be constructed using API syntax. I haven't used it ever, but if you are interested then you can go to MSDN and can see some example. My point is the Entity Framework's fluent interface for constructing SQL queries is based on IQueryables, not IEnumerables.
+
+
+Reference:
+----------
+https://www.codeproject.com/Articles/732425/IEnumerable-Vs-IQueryable
+https://www.c-sharpcorner.com/UploadFile/tirthacs/expressionfunc-vs-func/
+https://stackoverflow.com/questions/2433306/whats-the-difference-between-iqueryable-and-ienumerable
